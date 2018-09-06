@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url
 from myblog.views import *
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     url(r'^admin/', admin.site.urls),
     url(r'^blog/$',get_blogs),
     url(r'^detail/(\d+)/$',get_details,name='blog_get_detail'),
